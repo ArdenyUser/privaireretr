@@ -31,10 +31,10 @@ void Element::Element_NUCL()
 	Weight = 99;
 
 	DefaultProperties.temp = R_TEMP - 2.0f + 273.15f;
-	HeatConduct =899;
+	HeatConduct = 899;
 	Description = "Rare synthetic element of mass destruction.";
 
-	Properties = TYPE_LIQUID|PROP_NEUTPASS;
+	Properties = TYPE_LIQUID|PROP_NEUTPASS|PROP_RADIOACTIVE|PROP_LIFE_DEC|PROP_LIFE_KILL_DEC;
 
 	LowPressure = IPL;
 	LowPressureTransition = NT;
